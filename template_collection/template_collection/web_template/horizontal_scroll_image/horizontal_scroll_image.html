@@ -13,78 +13,96 @@
         .inner-container {
             display: inline-block; /* Make the inner container inline */
             width: 300px; /* Set a fixed width for the inner container */
-            margin-right: 10px; /* Optional: Add some spacing between inner containers */
-            border: 1px solid #ccc; /* Optional: Add a border for visibility */
         }
-        img {
-            max-width: 100%;
-            max-height: 400px; /* Adjust this value as needed */
-            height: auto; /* Maintain aspect ratio */
+
+        .scrolling-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .scrolling-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+        .image1{
+            width: 200px; 
+            height: 150px;
+            object-fit: cover; 
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
     <title>Horizontal Scroll</title>
 </head>
 <body>
 
-<div class="outer-container">
+<div class="outer-container scrolling-container">
     {% if image1 %}
-    <div class="inner-container">
-        <img src="{{image1}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content scrolling-content">
+        <img src="{{image1}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image2 %}
-    <div class="inner-container">
-        <img src="{{image2}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image2}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image3 %}
-    <div class="inner-container">
-        <img src="{{image3}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image3}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image4 %}
-    <div class="inner-container">
-        <img src="{{image4}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image4}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image5 %}
-    <div class="inner-container">
-        <img src="{{image5}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image5}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image6 %}
-    <div class="inner-container">
-        <img src="{{image6}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image6}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image7 %}
-    <div class="inner-container">
-        <img src="{{image7}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image7}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image8 %}
-    <div class="inner-container">
-        <img src="{{image8}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image8}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image9 %}
-    <div class="inner-container">
-        <img src="{{image9}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image9}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image10 %}
-    <div class="inner-container">
-        <img src="{{image10}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image10}}" alt="Image"  class="image1" >
     </div>
     {% endif %}    
     {% if image11 %}
-    <div class="inner-container">
-        <img src="{{image11}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image11}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
     {% if image12 %}
-    <div class="inner-container">
-        <img src="{{image12}}" alt="Image" width = "300" height ="500" class="image1" >
+    <div class="inner-container scrolling-content">
+        <img src="{{image12}}" alt="Image"  class="image1" >
     </div>
     {% endif %}
        
