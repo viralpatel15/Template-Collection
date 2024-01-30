@@ -2,6 +2,10 @@
     .container_blog {
     display: flex;
     }
+    .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
     .blog-lister{
         padding :20px;
         background-color: rgb(255, 243, 228);
@@ -117,7 +121,7 @@
                 {{ frappe.db.get_value('Blog Post' , blog2 , 'blog_intro') }}
              </div>
              <div class="link-to-blog">
-                <h5><a href="{{ blog_link }}">Read more...</a></h5>
+                <h5><a href="{{ blog_link2 }}">Read more...</a></h5>
              </div>
           </div>
        </div>
